@@ -1,0 +1,250 @@
+{
+  "title": "Dynamic UI Platform — Full Component Showcase",
+  "blocks": [
+    {
+      "id": "intro-heading",
+      "type": "heading-2",
+      "content": "A complete adaptive interface, generated from one source"
+    },
+    {
+      "id": "intro-text",
+      "type": "text",
+      "content": "This demo deliberately combines narrative, product capabilities, metrics, chronology, comparison, quotations, lists, and structured data so the planner has enough signals to produce a rich editorial composition."
+    },
+    {
+      "id": "split-main",
+      "type": "text",
+      "content": "The main reading column carries the core explanation while supporting context sits beside it."
+    },
+    {
+      "id": "split-side",
+      "type": "callout",
+      "content": "Presentation changes around the content, but the original information remains untouched."
+    },
+    {
+      "id": "split-list",
+      "type": "list",
+      "content": [
+        "Normalize the source",
+        "Plan the presentation",
+        "Validate the specification",
+        "Render trusted components"
+      ]
+    },
+    {
+      "id": "feat-1",
+      "type": "text",
+      "content": "Content-first architecture focuses on the contents that are to be displayed"
+    },
+    {
+      "id": "feat-2",
+      "type": "text",
+      "content": "Validated AI layout planning \n for best results"
+    },
+    {
+      "id": "feat-3",
+      "type": "text",
+      "content": "Token-controlled visual adaptation \nfor best resluts"
+    },
+    {
+      "id": "bento-1",
+      "type": "text",
+      "content": "Large, high-priority insight "
+    },
+    {
+      "id": "bento-2",
+      "type": "text",
+      "content": "Supporting context on the sides"
+    },
+    {
+      "id": "bento-3",
+      "type": "text",
+      "content": "Implementation detail on small box"
+    },
+    {
+      "id": "time-1",
+      "type": "heading-3",
+      "content": "Foundation — 2024"
+    },
+    {
+      "id": "time-2",
+      "type": "heading-3",
+      "content": "Adaptive rendering — 2025"
+    },
+    {
+      "id": "time-3",
+      "type": "heading-3",
+      "content": "AI planning — 2026"
+    },
+    {
+      "id": "comp-1",
+      "type": "text",
+      "content": "Traditional viewer — fixed structure"
+    },
+    {
+      "id": "comp-2",
+      "type": "text",
+      "content": "Traditional viewer — template-first"
+    },
+    {
+      "id": "comp-3",
+      "type": "text",
+      "content": "Adaptive viewer — content-first"
+    },
+    {
+      "id": "comp-4",
+      "type": "text",
+      "content": "Adaptive viewer — validated presentation"
+    },
+    {
+      "id": "stat-1",
+      "type": "text",
+      "content": "12,480\nDocuments processed"
+    },
+    {
+      "id": "stat-2",
+      "type": "text",
+      "content": "99.4%\nValidation success"
+    },
+    {
+      "id": "stat-3",
+      "type": "text",
+      "content": "184 ms\nAverage render time"
+    },
+    {
+      "id": "quote-1",
+      "type": "quote",
+      "content": "Let the content determine the composition.",
+      "metadata": {
+        "source": "Design principle"
+      }
+    },
+    {
+      "id": "quote-2",
+      "type": "text",
+      "content": "Visual hierarchy should make the document easier to understand, not compete with it."
+    },
+    {
+      "id": "story-1",
+      "type": "text",
+      "content": "Load the source document."
+    },
+    {
+      "id": "story-2",
+      "type": "text",
+      "content": "Normalize it into the shared content model."
+    },
+    {
+      "id": "story-3",
+      "type": "text",
+      "content": "Validate the presentation plan before rendering."
+    },
+    {
+      "id": "mag-1",
+      "type": "text",
+      "content": "Editorial rhythm comes from hierarchy."
+    },
+    {
+      "id": "mag-2",
+      "type": "text",
+      "content": "Cards create grouping without turning the page into a dashboard."
+    },
+    {
+      "id": "mag-3",
+      "type": "text",
+      "content": "Accent color is reserved for meaning and interaction."
+    },
+    {
+      "id": "min-1",
+      "type": "text",
+      "content": "Quiet layouts are valuable when the content is dense."
+    },
+    {
+      "id": "min-2",
+      "type": "code",
+      "content": "const trusted = validate(layoutSpec);",
+      "metadata": {
+        "language": "typescript"
+      }
+    },
+    {
+      "id": "highlight-1",
+      "type": "heading-2",
+      "content": "The key idea"
+    },
+    {
+      "id": "highlight-2",
+      "type": "text",
+      "content": "AI chooses from a controlled vocabulary; it never invents the interface."
+    },
+    {
+      "id": "component-list",
+      "type": "list",
+      "content": [
+        "Readable",
+        "Responsive",
+        "Accessible"
+      ]
+    },
+    {
+      "id": "component-callout",
+      "type": "callout",
+      "content": "This is a trusted callout component."
+    },
+    {
+      "id": "component-quote",
+      "type": "quote",
+      "content": "Components remain deterministic.",
+      "metadata": {
+        "source": "Demo"
+      }
+    },
+    {
+      "id": "component-table",
+      "type": "table",
+      "content": [
+        {
+          "Component": "Card",
+          "Role": "Grouping"
+        },
+        {
+          "Component": "Grid",
+          "Role": "Structured repetition"
+        },
+        {
+          "Component": "Table",
+          "Role": "Precise comparison"
+        }
+      ]
+    },
+    {
+      "id": "component-card",
+      "type": "text",
+      "content": "Card component demonstration"
+    },
+    {
+      "id": "component-grid-1",
+      "type": "text",
+      "content": "Grid item A"
+    },
+    {
+      "id": "component-grid-2",
+      "type": "text",
+      "content": "Grid item B"
+    },
+    {
+      "id": "component-text",
+      "type": "text",
+      "content": "Direct text component demonstration"
+    },
+    {
+      "id": "component-list-2",
+      "type": "ordered-list",
+      "content": [
+        "First",
+        "Second",
+        "Third"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Adaptive Dashboard",
+  "blocks": [
+    {
+      "id": "intro",
+      "type": "text",
+      "content": "JSON is normalized into the same ContentDocument model used by Markdown."
+    },
+    {
+      "id": "points",
+      "type": "list",
+      "content": [
+        "Project-local content source",
+        "No upload workflow",
+        "Common normalized representation"
+      ]
+    }
+  ]
+}

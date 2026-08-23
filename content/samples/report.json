@@ -1,0 +1,9 @@
+{
+  "title": "Quarterly Report",
+  "blocks": [
+    {"id": "revenue", "type": "text", "content": "Revenue\n$120K"},
+    {"id": "users", "type": "text", "content": "Users\n18,420"},
+    {"id": "growth", "type": "text", "content": "Growth\n22%"},
+    {"id": "summary", "type": "paragraph", "content": "Performance improved across the quarter while the content viewer remained focused on readability."}
+  ]
+}
