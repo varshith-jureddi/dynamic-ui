@@ -1,0 +1,19 @@
+{
+  "title": "Q3 Performance",
+  "period": "Q3 2026",
+  "kpis": {
+    "revenue": "$1.25M",
+    "growth": "18%",
+    "customers": 4200
+  },
+  "monthlyRevenue": [
+    {"name": "July", "value": 380000},
+    {"name": "August", "value": 410000},
+    {"name": "September", "value": 460000}
+  ],
+  "channels": [
+    {"Channel": "Organic", "Revenue": 460000},
+    {"Channel": "Paid", "Revenue": 390000},
+    {"Channel": "Partner", "Revenue": 400000}
+  ]
+}

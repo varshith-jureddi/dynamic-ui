@@ -1,0 +1,13 @@
+import fs from "node:fs"; import path from "node:path";
+const root=process.cwd();
+const required=["components/ui/Progress.tsx","components/ui/Status.tsx","components/ui/StatGrid.tsx","components/ui/ActivityFeed.tsx","components/ui/Insight.tsx","input/dashboard-demo.json","input/sales-dashboard.json","input/project-dashboard.json","input/operations-dashboard.json","skills/kpi/SKILL.md","skills/analytics/SKILL.md","skills/operations/SKILL.md"];
+for(const f of required) if(!fs.existsSync(path.join(root,f))) throw new Error(`Missing ${f}`);
+const schema=fs.readFileSync(path.join(root,"lib/validation/ui-schema.ts"),"utf8");
+for(const t of ["progress","status","statGrid","activityFeed","insight","area","donut","twoColumn"]) if(!schema.includes(t)) throw new Error(`Schema missing ${t}`);
+const registry=fs.readFileSync(path.join(root,"components/dynamic/ComponentRegistry.ts"),"utf8");
+for(const t of ["progress","status","statGrid","activityFeed","insight"]) if(!registry.includes(`${t}:`)) throw new Error(`Registry missing ${t}`);
+const panel=fs.readFileSync(path.join(root,"components/DemoPanel.tsx"),"utf8");
+for(const forbidden of ["/api/files","Skill Inspector","selectedSkills","format"]) if(panel.includes(forbidden)) throw new Error(`Demo UI exposes internal detail: ${forbidden}`);
+if(!panel.includes("dashboard-demo.json") || !panel.includes("sales-dashboard.json") || !panel.includes("project-dashboard.json") || !panel.includes("operations-dashboard.json")) throw new Error("Demo scenarios missing");
+const gen=fs.readFileSync(path.join(root,"lib/ai/ui-generator.ts"),"utf8"); if(!gen.includes("!process.env.ANTHROPIC_API_KEY")) throw new Error("API-key-free demo fallback missing");
+console.log("Final product checks passed.");

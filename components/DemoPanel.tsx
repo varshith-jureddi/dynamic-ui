@@ -1,0 +1,10 @@
+"use client";
+import { useEffect,useState } from "react"; import DynamicRenderer from "@/components/dynamic/DynamicRenderer"; import type { AIEnvelope } from "@/lib/validation/ui-schema";
+const scenarios=["dashboard-demo.json","sales-dashboard.json","project-dashboard.json","operations-dashboard.json"];
+export default function DemoPanel(){const [result,setResult]=useState<AIEnvelope|null>(null); const [loading,setLoading]=useState(true); const [error,setError]=useState(""); const [index,setIndex]=useState(0);
+ async function generate(i:number){setLoading(true);setError("");try{const res=await fetch("/api/generate",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({filename:scenarios[i]})});const data=await res.json();if(!res.ok)throw new Error(data.error||"Unable to generate dashboard.");setResult(data);}catch(e){setResult(null);setError(e instanceof Error?e.message:"Unable to generate dashboard.");}finally{setLoading(false);}}
+ useEffect(()=>{generate(0)},[]);
+ function regenerate(){const next=(index+1)%scenarios.length;setIndex(next);generate(next);}
+ return <main className="min-h-screen">{result&&!error?<div className={loading?"opacity-50 transition-opacity":"transition-opacity"}><DynamicRenderer spec={result.ui}/></div>:loading?<div className="flex min-h-screen items-center justify-center bg-[#f7f8fb]"><div className="text-center"><div className="mx-auto h-8 w-8 animate-spin rounded-full border-2 border-slate-200 border-t-slate-900"/><p className="mt-4 text-sm text-slate-500">Building your dashboard…</p></div></div>:<div className="flex min-h-screen items-center justify-center bg-[#f7f8fb] p-6"><div className="rounded-2xl border border-rose-200 bg-white p-6 text-center text-rose-700">{error}</div></div>}
+ <button onClick={regenerate} disabled={loading} aria-label="Generate another dashboard" title="Generate another dashboard" className="fixed bottom-6 right-6 z-50 inline-flex h-12 w-12 items-center justify-center rounded-full border border-slate-200 bg-white text-xl text-slate-700 shadow-lg transition hover:-translate-y-0.5 hover:shadow-xl disabled:opacity-50">{loading?"…":"↻"}</button>
+ </main>;}

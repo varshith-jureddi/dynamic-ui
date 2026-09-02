@@ -1,0 +1,58 @@
+{
+  "title": "Operations Health",
+  "period": "Last 30 days",
+  "kpis": {
+    "availability": 99.96,
+    "incidents": 18,
+    "responseTime": 7.4,
+    "health": "Healthy"
+  },
+  "traffic": [
+    {
+      "day": "Week 1",
+      "value": 1200
+    },
+    {
+      "day": "Week 2",
+      "value": 1380
+    },
+    {
+      "day": "Week 3",
+      "value": 1510
+    },
+    {
+      "day": "Week 4",
+      "value": 1660
+    }
+  ],
+  "services": [
+    {
+      "name": "API",
+      "value": 5
+    },
+    {
+      "name": "Payments",
+      "value": 4
+    },
+    {
+      "name": "Search",
+      "value": 3
+    },
+    {
+      "name": "Data",
+      "value": 6
+    }
+  ],
+  "activities": [
+    {
+      "title": "API deployment completed",
+      "description": "Release completed without incident.",
+      "timestamp": "32 min ago"
+    },
+    {
+      "title": "Availability target maintained",
+      "description": "Monthly availability remains above target.",
+      "timestamp": "3 hours ago"
+    }
+  ]
+}

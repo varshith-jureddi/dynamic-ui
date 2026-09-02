@@ -1,0 +1,88 @@
+{
+  "dashboard": {
+    "title": "Sales Intelligence",
+    "period": "September 2026"
+  },
+  "kpis": {
+    "revenue": {
+      "value": "$860K"
+    },
+    "customers": {
+      "value": 3120
+    },
+    "conversionRate": {
+      "value": "9.1%"
+    },
+    "orders": {
+      "value": 10240
+    }
+  },
+  "revenueTrend": [
+    {
+      "month": "May",
+      "revenue": 290000
+    },
+    {
+      "month": "Jun",
+      "revenue": 310000
+    },
+    {
+      "month": "Jul",
+      "revenue": 340000
+    },
+    {
+      "month": "Aug",
+      "revenue": 365000
+    },
+    {
+      "month": "Sep",
+      "revenue": 420000
+    }
+  ],
+  "customerSegments": [
+    {
+      "name": "Enterprise",
+      "value": 28
+    },
+    {
+      "name": "SMB",
+      "value": 52
+    },
+    {
+      "name": "Startup",
+      "value": 20
+    }
+  ],
+  "topCustomers": [
+    {
+      "name": "Acme Corp",
+      "revenue": "$190K",
+      "growth": "19%",
+      "status": "Active"
+    },
+    {
+      "name": "Globex",
+      "revenue": "$156K",
+      "growth": "11%",
+      "status": "Active"
+    },
+    {
+      "name": "Initech",
+      "revenue": "$102K",
+      "growth": "5%",
+      "status": "At Risk"
+    }
+  ],
+  "activities": [
+    {
+      "title": "New enterprise account",
+      "description": "Northwind joined the enterprise segment.",
+      "timestamp": "1 hour ago"
+    },
+    {
+      "title": "Upsell completed",
+      "description": "Globex expanded its order volume.",
+      "timestamp": "Yesterday"
+    }
+  ]
+}

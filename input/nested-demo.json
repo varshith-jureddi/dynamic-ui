@@ -1,0 +1,17 @@
+{
+  "title": "Nested UI Demonstration",
+  "summary": "A fixture designed to demonstrate nested cards, sections, metrics and tabs.",
+  "tabs": [
+    {
+      "label": "Overview",
+      "metrics": [
+        {"title": "Active users", "value": 1280},
+        {"title": "Conversion", "value": "14%"}
+      ]
+    },
+    {
+      "label": "Details",
+      "items": ["Frontend", "Backend", "Skills"]
+    }
+  ]
+}

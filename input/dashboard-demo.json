@@ -1,0 +1,88 @@
+{
+  "dashboard": {
+    "title": "Business Performance",
+    "period": "Q3 2026"
+  },
+  "kpis": {
+    "revenue": {
+      "value": "$1.24M",
+      "previous": "$1.05M",
+      "growth": 18
+    },
+    "customers": {
+      "value": 4280,
+      "previous": 3920,
+      "growth": 9
+    },
+    "conversionRate": {
+      "value": "8.4%",
+      "previous": "7.1%",
+      "growth": 18
+    },
+    "orders": {
+      "value": 18420,
+      "previous": 16200,
+      "growth": 14
+    }
+  },
+  "revenueTrend": [
+    {
+      "month": "Jul",
+      "revenue": 380000
+    },
+    {
+      "month": "Aug",
+      "revenue": 410000
+    },
+    {
+      "month": "Sep",
+      "revenue": 450000
+    }
+  ],
+  "customerSegments": [
+    {
+      "name": "Enterprise",
+      "value": 35
+    },
+    {
+      "name": "SMB",
+      "value": 45
+    },
+    {
+      "name": "Startup",
+      "value": 20
+    }
+  ],
+  "topCustomers": [
+    {
+      "name": "Acme Corp",
+      "revenue": "$240K",
+      "growth": "22%",
+      "status": "Active"
+    },
+    {
+      "name": "Globex",
+      "revenue": "$185K",
+      "growth": "14%",
+      "status": "Active"
+    },
+    {
+      "name": "Initech",
+      "revenue": "$142K",
+      "growth": "8%",
+      "status": "At Risk"
+    }
+  ],
+  "activities": [
+    {
+      "title": "Enterprise deal closed",
+      "description": "Acme Corp expanded its contract.",
+      "timestamp": "2 hours ago"
+    },
+    {
+      "title": "Conversion target reached",
+      "description": "Conversion rate exceeded the quarterly target.",
+      "timestamp": "5 hours ago"
+    }
+  ]
+}

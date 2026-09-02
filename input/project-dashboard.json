@@ -1,0 +1,17 @@
+{
+  "project": "AI Dynamic UI",
+  "overallProgress": 72,
+  "status": "On track",
+  "milestones": [
+    {"date": "2026-08-10", "title": "Input pipeline", "description": "JSON and Markdown discovery completed"},
+    {"date": "2026-08-20", "title": "Claude integration", "description": "UI planning API connected"},
+    {"date": "2026-08-30", "title": "Dynamic renderer", "description": "Controlled component rendering completed"},
+    {"date": "2026-09-05", "title": "Demo polish", "description": "Final demonstration pass"}
+  ],
+  "workstreams": [
+    {"name": "Frontend", "progress": 90},
+    {"name": "Backend", "progress": 80},
+    {"name": "Skills", "progress": 75},
+    {"name": "Testing", "progress": 45}
+  ]
+}
