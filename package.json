@@ -1,22 +1,32 @@
 {
-  "name": "adaptive-dashboard",
-  "version": "0.1.0",
+  "name": "ai-dynamic-ui",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "phase6:check": "node scripts/phase6-check.mjs"
+    "lint": "next lint",
+    "test:smoke": "node tests/phase2-smoke.mjs",
+    "test:skills": "node tests/phase3-skills.mjs"
   },
   "dependencies": {
-    "next": "15.5.6",
-    "react": "19.1.1",
-    "react-dom": "19.1.1"
+    "@anthropic-ai/sdk": "^0.60.0",
+    "@tailwindcss/postcss": "^4.3.3",
+    "next": "^15.5.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-markdown": "^10.1.0",
+    "recharts": "^3.1.0",
+    "zod": "^4.0.0"
   },
   "devDependencies": {
-    "@types/node": "^22.10.0",
-    "@types/react": "^19.0.0",
-    "@types/react-dom": "^19.0.0",
-    "typescript": "^5.7.2"
+    "@types/node": "^20.17.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.0",
+    "typescript": "^5.8.0"
   }
 }

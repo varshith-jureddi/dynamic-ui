@@ -1,2 +1,33 @@
-import { NextResponse } from "next/server"; import { loadInputFile } from "@/lib/input/loader"; import { parseInput } from "@/lib/input/parser"; import { loadSkills } from "@/lib/skills/loader"; import { generateUISpec } from "@/lib/ai/ui-generator";
-export async function POST(request:Request){try{const body=await request.json().catch(()=>null); const filename=typeof body?.filename==="string"?body.filename:"dashboard-demo.json"; const input=await loadInputFile(filename); const parsed=parseInput(input); const skills=await loadSkills(); const {envelope,mode}=await generateUISpec(parsed.rawContent,input.format,skills,input.filename); return NextResponse.json({title:envelope.title,ui:envelope.ui,mode});}catch(error){console.error("Generation error:",error); return NextResponse.json({error:error instanceof Error?error.message:"Unable to generate UI."},{status:500});}}
+import { NextResponse } from "next/server";
+import { loadInputFile } from "@/lib/input/loader";
+import { parseInput } from "@/lib/input/parser";
+import { loadSkills } from "@/lib/skills/loader";
+import { generateUISpec } from "@/lib/ai/ui-generator";
+export async function POST(request: Request) {
+  try {
+    const body = await request.json().catch(() => null);
+    const filename =
+      typeof body?.filename === "string"
+        ? body.filename
+        : "dashboard-demo.json";
+    const input = await loadInputFile(filename);
+    const parsed = parseInput(input);
+    const skills = await loadSkills();
+    const { envelope, mode } = await generateUISpec(
+      parsed.rawContent,
+      input.format,
+      skills,
+      input.filename,
+    );
+    return NextResponse.json({ title: envelope.title, ui: envelope.ui, mode });
+  } catch (error) {
+    console.error("Generation error:", error);
+    return NextResponse.json(
+      {
+        error:
+          error instanceof Error ? error.message : "Unable to generate UI.",
+      },
+      { status: 500 },
+    );
+  }
+}

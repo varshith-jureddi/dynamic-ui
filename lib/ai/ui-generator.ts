@@ -15,7 +15,7 @@ function extractJson(raw: string): unknown {
 }
 
 export async function generateUISpec(content: string, format: InputFormat, skills: Skill[], filename: string): Promise<{ envelope: AIEnvelope; raw: string; mode: "claude" | "demo" }> {
-  if (process.env.DEMO_MODE === "true" || !process.env.ANTHROPIC_API_KEY) {
+  if (process.env.DEMO_MODE === "true" || !process.env.OPENROUTER_API_KEY) {
     const envelope = createDemoEnvelope(filename, format, content);
     return { envelope, raw: JSON.stringify(envelope), mode: "demo" };
   }
